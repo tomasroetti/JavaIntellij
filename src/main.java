@@ -3,7 +3,7 @@ public class main {
         jugar juegar = new jugar();
         juegar.juego();
 
-        System.out.println("hola soy tomas");
+
 
 
     }

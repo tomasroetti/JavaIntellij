@@ -13,16 +13,19 @@ public class jugar {
         int min = 0;
         int max = 10;
         int numeroalt = (int) (Math.random() * ((max - min) + 1));
+        int intentos = 0;
+
+        System.out.printf("Vamos a comenzar elegi un numero entre %d y %d",min,max);
 
         System.out.println(numeroalt);
 
-        while (juegoactivo && true) {
+        while (juegoactivo) {
             System.out.println("Ingrese un  número");
             int numero = teclado.nextInt();
-
+            intentos++ ;
 
             if (numero == numeroalt) {
-                System.out.println("Usteded a ganado");
+                System.out.printf("Usteded a ganado\n con la %d intentos",intentos);
                 juegoactivo=false;
             }else if (numero < numeroalt) {
                 System.out.println("El numero es mayor ");
