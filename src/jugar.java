@@ -31,10 +31,6 @@ public class jugar {
                 System.out.println("el numero es menor");
 
             }
-
-
-
         }
-
     }
 }
